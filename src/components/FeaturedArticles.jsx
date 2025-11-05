@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Bookmark, ArrowRight } from 'lucide-react';
 
-const articles = [
+const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+
+const fallback = [
   {
     title: 'Inside the AI Race: Breakthroughs, Risks, and What Comes Next',
     tag: 'Deep Dive',
@@ -20,6 +22,31 @@ const articles = [
 ];
 
 const FeaturedArticles = () => {
+  const [articles, setArticles] = useState(fallback);
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const res = await fetch(`${API_BASE}/api/posts?status=published&limit=6`);
+        if (!res.ok) return;
+        const data = await res.json();
+        if (Array.isArray(data) && data.length) {
+          setArticles(
+            data.map((p) => ({
+              id: p.id,
+              title: p.title,
+              tag: p.category || 'News',
+              img: p.cover_image || 'https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1600&auto=format&fit=crop',
+            }))
+          );
+        }
+      } catch (e) {
+        // ignore; keep fallback
+      }
+    };
+    load();
+  }, []);
+
   return (
     <section id="features" className="relative w-full bg-[#0a0b10] py-12 text-white">
       <div className="mx-auto max-w-7xl px-6">

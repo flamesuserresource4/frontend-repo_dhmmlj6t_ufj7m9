@@ -3,55 +3,9 @@
 > vite
 
 
-  VITE v5.4.20  ready in 203 ms
+  VITE v5.4.20  ready in 213 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.35.3:3000/
-8:16:36 AM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/Hero3D.jsx:13:604: ERROR: Expected "}" but found ")"
-8:16:37 AM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/Hero3D.jsx:13:604: ERROR: Expected "}" but found ")"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/Hero3D.jsx:13:604
-  
-  Expected "}" but found ")"
-  11 |          <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#00d4ff]/20 blur-3xl" />
-  12 |          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(111,92,255,0.15),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(0,212,255,0.12),transparent_45%)]" />
-  13 |          <div className="absolute inset-0 opacity-[0.15] mix-blend-overlay" style={{ backgroundImage: 'url("data:image/svg+xml;utf8,<?xml version=\'1.0\' encoding=\'UTF-8\'?> <svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'400\' viewBox=\'0 0 400 400\'><filter id=\'n\'><feTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'2\' stitchTiles=\'stitch\'/><feColorMatrix type=\'saturate\' values=\'0\'/><feComponentTransfer><feFuncA type=\'discrete\' tableValues=\'0 0 0.2 0\'/></feComponentTransfer></filter><rect width=\'400\' height=\'400\' filter=\'url(%23n)\'/></svg>' )' }} />
-     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
-  14 |        </div>
-  15 |  
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-8:16:42 AM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/Hero3D.jsx:13:604: ERROR: Expected "}" but found ")"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/Hero3D.jsx:13:604
-  
-  Expected "}" but found ")"
-  11 |          <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#00d4ff]/20 blur-3xl" />
-  12 |          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(111,92,255,0.15),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(0,212,255,0.12),transparent_45%)]" />
-  13 |          <div className="absolute inset-0 opacity-[0.15] mix-blend-overlay" style={{ backgroundImage: 'url("data:image/svg+xml;utf8,<?xml version=\'1.0\' encoding=\'UTF-8\'?> <svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'400\' viewBox=\'0 0 400 400\'><filter id=\'n\'><feTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'2\' stitchTiles=\'stitch\'/><feColorMatrix type=\'saturate\' values=\'0\'/><feComponentTransfer><feFuncA type=\'discrete\' tableValues=\'0 0 0.2 0\'/></feComponentTransfer></filter><rect width=\'400\' height=\'400\' filter=\'url(%23n)\'/></svg>' )' }} />
-     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
-  14 |        </div>
-  15 |  
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+8:29:47 AM [vite] ✨ new dependencies optimized: @splinetool/react-spline
+8:29:47 AM [vite] ✨ optimized dependencies changed. reloading
